@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      form * {
+        display: block;
+        margin: 10px;
+      }
+      * {
+        font-size: 25px;
+      }
+      div * {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="EmpController.php" method="post">
+      
+      <label>
+        First Name
+        <input type="text" name="firstName" />
+      </label>
+      <label>
+        Last Name
+        <input type="text" name="lastName" />
+      </label>
+      <!-- <div style="display: flex;"> -->
+      <label style="text-align: start">
+        Address
+        <textarea name="address" id="" cols="20" rows="5"></textarea>
+      </label>
+      <!-- </div> -->
+  
+
+
+      <label>
+        Username
+        <input type="text" name="username" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <label>
+        Department
+        <input type="text" value="OpenSource" name="department"  />
+      </label>
+      <!-- <label for=""id="code">Sh68Sa</label>     
+            <p>Please Insert the code in the below box</p>
+            <input type="text"  name="code"> -->
+      <label>Captcha Code</label>
+      <img src="captcha.php" alt="PHP Captcha" />
+      <label>Enter Captcha</label>
+      <input type="text" class="form-control" name="captcha" id="captcha" />
+
+      <div>
+        <button
+          type="submit"
+          id="btn"
+          name="add"
+        >
+          Submit
+        </button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <script>
+     
+    </script>
+  </body>
+</html>
